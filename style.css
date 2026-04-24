@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    color: #222222;
+}
+
+header {
+    background-color: #111111;
+    color: white;
+    padding: 25px 40px;
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    width: 80px;
+}
+
+.header-text {
+    margin-left: 20px;
+}
+
+.header-text h1 {
+    margin: 0 0 10px 0;
+    font-size: 30px;
+}
+
+.header-text p {
+    margin: 0;
+    font-size: 16px;
+}
+
+main {
+    width: 960px;
+    margin: auto;
+    padding: 30px 0;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.intro h2 {
+    color: #d12a2a;
+    margin-bottom: 15px;
+}
+
+.car-box {
+    background-color: white;
+    border: 1px solid #d6d6d6;
+    padding: 20px;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.car-image {
+    width: 50%;
+    text-align: center;
+}
+
+.car-image img {
+    width: 320px;
+    max-width: 100%;
+}
+
+.car-text {
+    width: 50%;
+    padding: 20px;
+}
+
+.car-text h3 {
+    color: #d12a2a;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.car-text p {
+    line-height: 1.8;
+}
+
+@media (max-width: 1000px) {
+    main {
+        width: 90%;
+    }
+}
+
+@media (max-width: 700px) {
+    header {
+        display: block;
+        text-align: center;
+    }
+
+    .header-text {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .car-box,
+    .car-box.right {
+        display: block;
+    }
+
+    .car-image,
+    .car-text {
+        width: 100%;
+        padding: 10px 0;
+        text-align: center;
+    }
+}
